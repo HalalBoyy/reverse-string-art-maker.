@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HalalClub String Art Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div id="logo"><img src="logo.png" alt=""></div>
+    <h1><span>Turning Math Into Art.</span></h1>
+  </header>
+
+  <main>
+    <section id="controls">
+      <label for="sequence">Pin sequence (comma-separated):</label>
+      <textarea id="sequence" rows="5" placeholder="Paste your pin sequence here..."></textarea>
+
+      <div class="input-group">
+        <label for="nails">Number of nails:</label>
+        <input type="number" id="nails" value="282" min="1" />
+      </div>
+
+      <div class="input-group">
+        <label><input type="checkbox" id="zeroIndex" checked /> 0-based indexing</label>
+      </div>
+
+      <button id="drawButton">Draw Preview</button>
+      <button id="exportButton">Export PNG</button>
+    </section>
+
+    <canvas id="artCanvas" width="800" height="800"></canvas>
+  </main>
+
+  <footer>
+    <p>© HalalClub — Turning Math Into Art</p>
+    <p>Created on: 26 Oct 2025 | Port Harcourt</p>
+    <p>Contact: <a href="mailto:halalboy2406@gmail.com">halalboy2406@gmail.com</a></p>
+    <div class="socials">
+      <a href="https://x.com/Halalb0y" target="_blank" aria-label="X">
+        <svg viewBox="0 0 24 24"><path d="M18.36 2H21l-7.54 8.61L22 22h-5.66l-4.4-5.58L6.64 22H4l7.88-9L2 2h5.75l4.07 5.18L18.36 2z"/></svg>
+      </a>
+      <a href="https://youtube.com/@halalboyy" target="_blank" aria-label="YouTube">
+        <svg viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6zm12-3c0 2.5-.25 4.5-.75 6-.5 1.5-1.5 2.5-3 3-1.5.5-3.75.75-6.75.75s-5.25-.25-6.75-.75c-1.5-.5-2.5-1.5-3-3S1 14.5 1 12s.25-4.5.75-6 1.5-2.5 3-3C6.25 2.5 8.5 2.25 11.5 2.25s5.25.25 6.75.75c1.5.5 2.5 1.5 3 3 .5 1.5.75 3.5.75 6z"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@halalbwoi" target="_blank" aria-label="TikTok">
+        <svg viewBox="0 0 24 24"><path d="M12 2c1.1 0 2 .9 2 2v10a4 4 0 11-4-4h1v2h-1a2 2 0 102 2V2z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
